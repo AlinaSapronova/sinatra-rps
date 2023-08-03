@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sinatra RPS</title>
+    </head>
+    <body>
+<p>
+<% if @game == "paper" %>
+  <p><%= "We played rock!" %></p>
+  <p><%= "They played paper!"%></p>
+  <p><%= "We lost!"%></p>
+<% elsif @game == "scissors" %>
+  <p><%= "We played rock!" %></p>
+  <p><%= "They played scissors!"%></p>
+  <p><%= "We won!"%></p>
+<% else %>
+  <p><%= "We played rock!" %></p>
+  <p><%= "They played rock!"%></p>
+  <p><%= "We tied!"%></p>
+ <% end %>
+</p>
+    </body>
+    </html>
