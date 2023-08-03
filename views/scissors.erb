@@ -9,17 +9,17 @@
     <body>
 <p>
 <% if @game == "paper" %>
-  <p class="me"><%= "We played rock!" %></p>
+  <p class="me"><%= "We played scissors!" %></p>
   <p class="me"><%= "They played paper!"%></p>
-  <p class="me"><%= "We lost!"%></p>
-<% elsif @game == "scissors" %>
-  <p class="me"><%= "We played rock!" %></p>
-  <p class="me"><%= "They played scissors!"%></p>
   <p class="me"><%= "We won!"%></p>
-<% else %>
-  <p class="me"><%= "We played rock!" %></p>
-  <p class="me"><%= "They played rock!"%></p>
+<% elsif @game == "scissors" %>
+  <p class="me"><%= "We played scissors!" %></p>
+  <p class="me"><%= "They played scissors!"%></p>
   <p class="me"><%= "We tied!"%></p>
+<% else %>
+  <p class="me"><%= "We played scissors!" %></p>
+  <p class="me"><%= "They played rock!"%></p>
+  <p class="me"><%= "We lose!"%></p>
  <% end %>
 </p>
 
